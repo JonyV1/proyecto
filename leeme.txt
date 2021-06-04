@@ -1,0 +1,6 @@
+Ruta principal del proyecto aqui estan los diferentes directorios que ocupara el proyecto.
+También iran los archivos principales:
+index - sera la pantalla de logeo
+sigin - sera la pantalla donde se dara de alta a nuevos empleados
+portal- sera la pantalla donde se realizaran los pedidos
+
