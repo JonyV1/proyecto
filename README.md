@@ -1,2 +1,2 @@
-# pizzeria
-Pequeño proyecto para un punto de venta de una pizzeria
+# intranet
+Pequeño proyecto para el desarrollo de una pequeña intranet
