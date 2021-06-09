@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <form id="t-form">
+        <span id="nomProducto">Pizza champiñones</span><br/>
+        <img src="https://picsum.photos/150/170" alt="Pizza champiñones"><br/>
+        <span id="spanPrecio"> </span><br/>
+        <a href="javascript:lessNumero();"><img src="https://picsum.photos/20/20" title="Quitar un producto"></a>
+        <input type="number" id="numProducto" value="0" minlength="0" maxlength="999"/>
+        <!-- <span id="numProducto" >0</span> -->
+        <a href="javascript:addNumero();"><img src="https://picsum.photos/20/20" title="Agregar un producto"></a>
+        <br/>
+        <select id="comboPrecio" name="ponerPrecio" onchange="ponPrecio();">
+            <option value="0">Selecciona Tamaño</option>
+            <option value="50">Chica</option>
+            <option value="120">Mediana</option>
+            <option value="180">Familiar</option>
+        </select><br/>
+        <button id="addPedido">Agregar al Pedido</button>
+    </form>
+    <br/>
+    <table id="tabla-pedido">
+        <thead>
+            <tr>
+                <th>Cant.</th>
+                <th>Producto</th>
+                <th>Tamaño</th>
+                <th>Precio</th>
+                <th>Borrar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="t-list">
+                <td class="tdCantidad">1</td>
+                <td class="tdProducto">2</td>
+                <td class="tdTamaño"></td>
+                <td class="tdPrecio">4</td>
+                <td class="tdBorrar">5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td class="tdTotal"> </td>
+            </tr>
+        </tfoot>
+    </table><br/>
+        
+    <input type="button" value="Realizar compra">
+</body>
+</html>
+
+<!-- <script src="js/carro.js"></script> -->
+<script src="js/numAumento.js"></script>
+
+<!-- <form id="t-form">
+    <input type="text" id="nombre" />
+    <input type="submit" value="ENVIAR" />
+</form>
+<br/>
+<ul id="t-list">
+
+</ul> -->
+
+<!--Idea para realizar el carrito de compras de la pizzeria por medio de un to do list
+En la parte de formulario van ir todos los elementos para realizar las compras
+
+Para pasar los items de las compras a la lista. Esta se cargara en una tabla
+con el id necesario en el tr para pasar los elementos
+
+Cant.
+Producto
+Tamaño
+Precio
+Borrar
+
+Al dar en el boton de comprar
+Se mostrara un alert donde se le indica al empleado que confirme la compra con el cliente antes de registrarla en el sistema
+
+-->
